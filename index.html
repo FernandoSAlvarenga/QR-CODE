@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./reset.css" />
-
-    <title>QR</title>
-  </head>
-
-  <body>
-    <div class="page">
-      <form method="POST" class="formLogin">
-        <h1>Gerador de QR CODE</h1>
-
-        <label for="url">Digite algo abaixo.</label>
-        <input
-          type="text"
-          required
-          placeholder="Digite aqui"
-          autofocus="true"
-        />
-        <button type="submit" class="btn">Gerar QR CODE</button>
-        <img src="" alt="" />
-      </form>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="reset.css">
+  <title>Gerador de QR code</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Gerador de QR Code</h1>
+    </header>
+    <div class="form">
+      <input type="text" placeholder="Digite algo aqui.">
+      <button>Gerar QR Code</button>
     </div>
-    <script src=""https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + valor de dentro do input></script>
-    <script src="index.js"></script>
-  </body>
+    <div class="qr-code">
+      <img src="" alt="qr-code">
+    </div>
+  </div>
+  <script src="scrip.js"></script>
+</body>
 </html>
